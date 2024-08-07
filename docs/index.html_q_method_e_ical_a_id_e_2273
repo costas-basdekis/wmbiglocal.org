@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.5.2//EN
+X-ORIGINAL-URL:https://wmbiglocal.org/
+X-WR-CALNAME:William Morris Big Local
+X-WR-CALDESC:Empowering our community
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+DTSTART;TZID=UTC:20230522T023000
+DTEND;TZID=UTC:20230522T163000
+DTSTAMP:20230510T120400
+UID:MEC-074177d3eb6371e32c16c55a3b8f706b@wmbiglocal.org
+CREATED:20230510
+LAST-MODIFIED:20230510
+PRIORITY:5
+TRANSP:OPAQUE
+SUMMARY:Human Library Event
+DESCRIPTION:[et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.18.0″ _dynamic_attributes=”background_image” _module_preset=”default” use_background_color_gradient=”on” background_color_gradient_stops=”rgba(0,0,0,0) 0%|rgba(0,0,0,0.4) 100%” background_color_gradient_overlays_image=”on” background_color_gradient_start=”rgba(0,0,0,0)” background_color_gradient_end=”rgba(0,0,0,0.4)” background_image=”@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF9mZWF0dXJlZF9pbWFnZSIsInNldHRpbmdzIjp7fX0=@” custom_padding=”200px||60px||false|false” custom_padding_tablet=”80px||40px||false|false” custom_padding_phone=”60px||0px||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_text _builder_version=”4.16″ _dynamic_attributes=”content” _module_preset=”default” header_font=”|700|||||||” header_text_color=”#FFFFFF” header_line_height=”1.2em” global_colors_info=”{}”]@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF90aXRsZSIsInNldHRpbmdzIjp7ImJlZm9yZSI6IjxoMT4iLCJhZnRlciI6IjwvaDE+In19@[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section][et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.16″ _module_preset=”default” custom_padding=”60px||0px|||” custom_padding_tablet=”60px||0px|||” custom_padding_phone=”40px||||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.16″ _module_preset=”default” width=”100%” custom_padding=”0px||||false|false” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_text module_class=”tick-list-green” _builder_version=”4.20.0″ _module_preset=”default” locked=”off” global_colors_info=”{}”]\nWould you like to learn about people’s lived experience on a subject you relate to?\nThe human library started 23 years ago by a group in Denmark after the death of a friend.\nYou can loan a human book for 20 minutes and gain valuable knowledge and awareness from someone who is willing to share their life experiences or have achieved what you desire.\nCome along if you are curious to read a human book, you can just turn up on the day.\nWhere: Priory Court Community Centre, 11 Priory Court, E17 5NB.\nWhen: Monday 22nd May, 2.30-4.30pm.\nThese activities are run by William Morris Big Local and will be held in the Community Living Room which is funded by Waltham Forest council and Clarion Futures.\nCommunity Living Room is open every Monday and Thursday 12pm-5pm in Priory Court Community Centre. Free drinks, snacks and wi-fi is available.\nAll activities are free to attend and you do not have to register.\n[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section]\n
+URL:https://wmbiglocal.org/events/human-library-event
+ORGANIZER;CN=William Morris Big Local:MAILTO:
+CATEGORIES:Community
+LOCATION:Priory Court Community Centre, E17 5NB
+ATTACH;FMTTYPE=image/png:https://wmbiglocal.org/wp-content/uploads/2023/05/Human-Library-borrow-a-book-e1683719849129.png
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.5.2//EN
+X-ORIGINAL-URL:https://wmbiglocal.org/
+X-WR-CALNAME:William Morris Big Local
+X-WR-CALDESC:Empowering our community
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+DTSTART;TZID=UTC:20230120T093000
+DTEND;TZID=UTC:20230331T113000
+DTSTAMP:20221212T160500
+UID:MEC-52dbb0686f8bd0c0c757acf716e28ec0@wmbiglocal.org
+CREATED:20221212
+LAST-MODIFIED:20230510
+PRIORITY:5
+TRANSP:OPAQUE
+SUMMARY:Free Family Circus Workshops
+DESCRIPTION:[et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.18.0″ _dynamic_attributes=”background_image” _module_preset=”default” use_background_color_gradient=”on” background_color_gradient_stops=”rgba(0,0,0,0) 0%|rgba(0,0,0,0.4) 100%” background_color_gradient_overlays_image=”on” background_color_gradient_start=”rgba(0,0,0,0)” background_color_gradient_end=”rgba(0,0,0,0.4)” background_image=”@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF9mZWF0dXJlZF9pbWFnZSIsInNldHRpbmdzIjp7fX0=@” custom_padding=”200px||60px||false|false” custom_padding_tablet=”80px||40px||false|false” custom_padding_phone=”60px||0px||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_text _builder_version=”4.16″ _dynamic_attributes=”content” _module_preset=”default” header_font=”|700|||||||” header_text_color=”#FFFFFF” header_line_height=”1.2em” global_colors_info=”{}”]@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF90aXRsZSIsInNldHRpbmdzIjp7ImJlZm9yZSI6IjxoMT4iLCJhZnRlciI6IjwvaDE+In19@[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section][et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.16″ _module_preset=”default” custom_padding=”60px||0px|||” custom_padding_tablet=”60px||0px|||” custom_padding_phone=”40px||||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.16″ _module_preset=”default” width=”100%” custom_padding=”0px||||false|false” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_text module_class=”tick-list-green” _builder_version=”4.18.0″ _module_preset=”default” locked=”off” global_colors_info=”{}”]\nWe have co-funded a series of free family workshops for pre-school children in E17 with Waltham Forest Council and Future Formed Programme.\nNearly There Yet uses creative, physical work to excite, engage, and entertain. They connect people through an ordinary approach to the extraordinary worlds of circus and performance.\nActivities include Plate spinning, Juggling, Flower sticks, acrobatics and balance skills to build coordination and physical skills while having fun together.\nEmail Ed@nearlythereyet.com to register your interest or to ask for more information.\nRecommended age 12 months+ but all ages welcome.\nAvailable dates are: 27.01, 03.02, 10.02, 24.02, 03.03, 10.03, 17.03, 24.03, 31.03.\nBooking is essential.\n[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section]\n
+URL:https://wmbiglocal.org/events/free-family-circus-workshops
+ORGANIZER;CN=Nearly There Yet:MAILTO:
+CATEGORIES:Community
+LOCATION:Priory Court Community Centre
+ATTACH;FMTTYPE=image/png:https://wmbiglocal.org/wp-content/uploads/2022/12/circus-skills.png
+END:VEVENT
+END:VCALENDAR

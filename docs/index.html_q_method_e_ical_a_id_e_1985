@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.5.2//EN
+X-ORIGINAL-URL:https://wmbiglocal.org/
+X-WR-CALNAME:William Morris Big Local
+X-WR-CALDESC:Empowering our community
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+DTSTART;TZID=UTC:20221024T120000
+DTEND;TZID=UTC:20221029T150000
+DTSTAMP:20221020T144700
+UID:MEC-1f36c15d6a3d18d52e8d493bc8187cb9@wmbiglocal.org
+CREATED:20221020
+LAST-MODIFIED:20221205
+PRIORITY:5
+TRANSP:OPAQUE
+SUMMARY:Free Autumn half-term activities!
+DESCRIPTION:[et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.16″ _dynamic_attributes=”background_image” _module_preset=”default” use_background_color_gradient=”on” background_color_gradient_stops=”rgba(0,0,0,0) 0%|rgba(0,0,0,0.4) 100%” background_color_gradient_overlays_image=”on” background_color_gradient_start=”rgba(0,0,0,0)” background_color_gradient_end=”rgba(0,0,0,0.4)” background_image=”@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF9mZWF0dXJlZF9pbWFnZSIsInNldHRpbmdzIjp7fX0=@” custom_padding=”200px||60px||false|false” custom_padding_tablet=”80px||40px||false|false” custom_padding_phone=”60px||0px||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_text _builder_version=”4.16″ _dynamic_attributes=”content” _module_preset=”default” header_font=”|700|||||||” header_text_color=”#FFFFFF” header_line_height=”1.2em” global_colors_info=”{}”]@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF90aXRsZSIsInNldHRpbmdzIjp7ImJlZm9yZSI6IjxoMT4iLCJhZnRlciI6IjwvaDE+In19@[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section][et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.16″ _module_preset=”default” custom_padding=”60px||0px|||” custom_padding_tablet=”60px||0px|||” custom_padding_phone=”40px||||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.16″ _module_preset=”default” width=”100%” custom_padding=”0px||||false|false” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_text module_class=”tick-list-green” _builder_version=”4.18.0″ _module_preset=”default” locked=”off” global_colors_info=”{}”]\n,\nCome and join these free family activities this half-term week!\nActivities are run by the William Morris Big Local Youth Club and Wood Street Walls, and part funded by the Waltham Forest Council, so you do not have to pay anything to join them.\nList of activities:\nMonday 12pm-3pm: Lantern making and candle making.\nTuesday 12pm-3pm: William Morris Gnomes workshop and plant pot decorating.\nWednesday 12pm-3pm: Multi sports, and collage workshops.\nThursday 12pm-3pm: Young Local Youth Club take over sessions and mini spray paint session with stencils.\nFriday 12pm-3pm: Halloween games, face paint, mask decorating, musical statues and pin the hat on the witch.\nSaturday 12pm-3pm: Halloween games, mask decorating, pin the hat on the witch, tattoos and spider web making.\n \n \n[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section]\n
+URL:https://wmbiglocal.org/events/free-autumn-half-term-activities
+ORGANIZER;CN=Wood Street Walls:MAILTO:
+CATEGORIES:Community,Outdoor Spaces
+LOCATION:Fellowship Square &amp; Fountain
+ATTACH;FMTTYPE=image/jpeg:https://wmbiglocal.org/wp-content/uploads/2022/10/Monday-Saturday-activities.jpg
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="../xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.4 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>No Pasarán documentary | William Morris Big Local</title>
+	<link rel="canonical" href="../index.html_q_p_e_1974.html" />
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="No Pasarán documentary | William Morris Big Local" />
+	<meta property="og:url" content="https://wmbiglocal.org/project/no-pasaran-documentary" />
+	<meta property="og:site_name" content="William Morris Big Local" />
+	<meta property="article:modified_time" content="2022-11-14T16:29:03+00:00" />
+	<meta property="og:image" content="https://wmbiglocal.org/wp-content/uploads/2022/10/WMBL-poster.jpg" />
+	<meta property="og:image:width" content="2560" />
+	<meta property="og:image:height" content="1440" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Estimated reading time" />
+	<meta name="twitter:data1" content="2 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://wmbiglocal.org/project/no-pasaran-documentary","url":"https://wmbiglocal.org/project/no-pasaran-documentary","name":"No Pasarán documentary | William Morris Big Local","isPartOf":{"@id":"https://wmbiglocal.org/#website"},"primaryImageOfPage":{"@id":"https://wmbiglocal.org/project/no-pasaran-documentary#primaryimage"},"image":{"@id":"https://wmbiglocal.org/project/no-pasaran-documentary#primaryimage"},"thumbnailUrl":"https://wmbiglocal.org/wp-content/uploads/2022/10/WMBL-poster.jpg","datePublished":"2022-10-13T13:20:09+00:00","dateModified":"2022-11-14T16:29:03+00:00","breadcrumb":{"@id":"https://wmbiglocal.org/project/no-pasaran-documentary#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://wmbiglocal.org/project/no-pasaran-documentary"]}]},{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://wmbiglocal.org/project/no-pasaran-documentary#primaryimage","url":"https://wmbiglocal.org/wp-content/uploads/2022/10/WMBL-poster.jpg","contentUrl":"https://wmbiglocal.org/wp-content/uploads/2022/10/WMBL-poster.jpg","width":2560,"height":1440,"caption":"No Pasaran -Movie poster"},{"@type":"BreadcrumbList","@id":"https://wmbiglocal.org/project/no-pasaran-documentary#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://wmbiglocal.org/"},{"@type":"ListItem","position":2,"name":"Projects","item":"https://wmbiglocal.org/project"},{"@type":"ListItem","position":3,"name":"No Pasarán documentary"}]},{"@type":"WebSite","@id":"https://wmbiglocal.org/#website","url":"https://wmbiglocal.org/","name":"William Morris Big Local","description":"Empowering our community","publisher":{"@id":"https://wmbiglocal.org/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://wmbiglocal.org/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-GB"},{"@type":"Organization","@id":"https://wmbiglocal.org/#organization","name":"William Morris Big Local","url":"https://wmbiglocal.org/","logo":{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://wmbiglocal.org/#/schema/logo/image/","url":"https://wmbiglocal.org/wp-content/uploads/2022/02/WMBL_FINALS-black-small.png","contentUrl":"https://wmbiglocal.org/wp-content/uploads/2022/02/WMBL_FINALS-black-small.png","width":100,"height":100,"caption":"William Morris Big Local"},"image":{"@id":"https://wmbiglocal.org/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='https://www.googletagmanager.com/' />
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel="alternate" type="application/rss+xml" title="William Morris Big Local &raquo; Feed" href="../feed" />
+<link rel="alternate" type="application/rss+xml" title="William Morris Big Local &raquo; Comments Feed" href="../comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="William Morris Big Local &raquo; No Pasarán documentary Comments Feed" href="no-pasaran-documentary/feed" />
+<meta content="WMBL v.1.0.0" name="generator"/><link rel='stylesheet' id='mec-select2-style-css' href='../wp-content/plugins/modern-events-calendar-lite/assets/packages/select2/select2.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-font-icons-css' href='../wp-content/plugins/modern-events-calendar-lite/assets/css/iconfonts.css_q_ver_e_6.3.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-frontend-style-css' href='../wp-content/plugins/modern-events-calendar-lite/assets/css/frontend.min.css_q_ver_e_6.5.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-tooltip-style-css' href='../wp-content/plugins/modern-events-calendar-lite/assets/packages/tooltip/tooltip.css_q_ver_e_6.3.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-tooltip-shadow-style-css' href='../wp-content/plugins/modern-events-calendar-lite/assets/packages/tooltip/tooltipster-sideTip-shadow.min.css_q_ver_e_6.3.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='featherlight-css' href='../wp-content/plugins/modern-events-calendar-lite/assets/packages/featherlight/featherlight.css_q_ver_e_6.3.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-lity-style-css' href='../wp-content/plugins/modern-events-calendar-lite/assets/packages/lity/lity.min.css_q_ver_e_6.3.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-general-calendar-style-css' href='../wp-content/plugins/modern-events-calendar-lite/assets/css/mec-general-calendar.css_q_ver_e_6.3.5.css' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='pl-style-css' href='../wp-content/plugins/page-loader/assets/css/style.css_q_ver_e_6.3.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='et_monarch-css-css' href='../wp-content/plugins/monarch/css/style.css_q_ver_e_1.4.14.css' type='text/css' media='all' />
+<link rel='stylesheet' id='et-gf-open-sans-css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' type='text/css' media='all' />
+<link rel='stylesheet' id='dp-portfolio-posts-pro-styles-css' href='../wp-content/plugins/dp-portfolio-posts-pro/styles/style.min.css_q_ver_e_4.1.8.css' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-styles-css' href='../wp-content/plugins/modern-events-calendar-lite/app/addons/divi/styles/style.min.css_q_ver_e_1.0.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='spf-google-web-fonts-_sptp_generator-css' href='https://fonts.googleapis.com/css?family=Open%20Sans:600|Open%20Sans:600|Open%20Sans|Open%20Sans:300|Open%20Sans|Open%20Sans:400' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-parent-css' href='../wp-content/themes/Divi/style-static.min.css_q_ver_e_4.25.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='../wp-content/themes/WMBL/style.css_q_ver_e_4.25.1.css' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.min.js_q_ver_e_3.7.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js_q_ver_e_3.4.1' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/modern-events-calendar-lite/assets/js/mec-general-calendar.js_q_ver_e_6.5.2' id='mec-general-calendar-script-js'></script>
+<script type='text/javascript' id='mec-frontend-script-js-extra'>
+/* <![CDATA[ */
+var mecdata = {"day":"day","days":"days","hour":"hour","hours":"hours","minute":"minute","minutes":"minutes","second":"second","seconds":"seconds","elementor_edit_mode":"no","recapcha_key":"","ajax_url":"https:\/\/wmbiglocal.org\/wp-admin\/admin-ajax.php","fes_nonce":"f396a91cac","current_year":"2024","current_month":"08","datepicker_format":"yy-mm-dd&Y-m-d"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/modern-events-calendar-lite/assets/js/frontend.js_q_ver_e_6.5.2' id='mec-frontend-script-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/modern-events-calendar-lite/assets/js/events.js_q_ver_e_6.5.2' id='mec-events-script-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/page-loader/assets/js/script.js_q_ver_e_6.3.5' id='pl-script-js'></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+
+<!-- Google Analytics snippet added by Site Kit -->
+<script type='text/javascript' data-src='https://www.googletagmanager.com/gtag/js?id=G-02M004SWPJ' id='google_gtagjs-js' async></script>
+<script id="google_gtagjs-js-after" type="text/javascript">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["wmbiglocal.org"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "G-02M004SWPJ");
+</script>
+
+<!-- End Google tag (gtag.js) snippet added by Site Kit -->
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" type="application/json" href="../wp-json/wp/v2/project/1974" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.5" />
+<link rel='shortlink' href='../index.html_q_p_e_1974.html' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed_q_url=https%253A%252F%252Fwmbiglocal.org%252Fproject%252Fno-pasaran-documentary" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed_q_url=https%253A%252F%252Fwmbiglocal.org%252Fproject%252Fno-pasaran-documentary&amp;format=xml" />
+<meta name="cdp-version" content="1.4.7" /><meta name="generator" content="Site Kit by Google 1.132.0" /><style type="text/css" id="et-social-custom-css">
+				.et_monarch .et_social_sidebar_networks li, .et_monarch .et_social_mobile li { background: #70baaa; } .et_monarch .et_social_sidebar_networks .et_social_icons_container li:hover, .et_monarch .et_social_mobile .et_social_icons_container li:hover { background: #70baaa !important; } .et_social_sidebar_border li { border-color: #70baaa !important; } .et_monarch .et_social_sidebar_networks .et_social_icons_container li i, .et_monarch .et_social_sidebar_networks .et_social_icons_container li .et_social_count, .et_monarch .et_social_mobile .et_social_icons_container li i, .et_monarch .et_social_mobile .et_social_icons_container li .et_social_count { color: #ffffff; } .et_monarch .et_social_sidebar_networks .et_social_icons_container li:hover i, .et_monarch .et_social_sidebar_networks .et_social_icons_container li:hover .et_social_count, .et_monarch .et_social_mobile .et_social_icons_container li:hover i, .et_monarch .et_social_mobile .et_social_icons_container li:hover .et_social_count { color: #ffffff !important; } 
+			</style><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><script >
+    jQuery(function($) {
+        $(document).ready(function() {
+            $("body ul.et_mobile_menu li.menu-item-has-children, body ul.et_mobile_menu  li.page_item_has_children").append('<a href="../index.html_q_p_e_1974.html#" class="mobile-toggle"></a>');
+            $('ul.et_mobile_menu li.menu-item-has-children .mobile-toggle, ul.et_mobile_menu li.page_item_has_children .mobile-toggle').click(function(event) {
+                event.preventDefault();
+                $(this).parent('li').toggleClass('dt-open');
+                $(this).parent('li').find('ul.children').first().toggleClass('visible');
+                $(this).parent('li').find('ul.sub-menu').first().toggleClass('visible');
+            });
+            iconFINAL = 'P';
+            $('body ul.et_mobile_menu li.menu-item-has-children, body ul.et_mobile_menu li.page_item_has_children').attr('data-icon', iconFINAL);
+            $('.mobile-toggle').on('mouseover', function() {
+                $(this).parent().addClass('is-hover');
+            }).on('mouseout', function() {
+                $(this).parent().removeClass('is-hover');
+            })
+        });
+    }); 
+</script><link rel="icon" href="../wp-content/uploads/2022/01/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="../wp-content/uploads/2022/01/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../wp-content/uploads/2022/01/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://wmbiglocal.org/wp-content/uploads/2022/01/cropped-favicon-270x270.png" />
+<link rel="stylesheet" id="et-core-unified-tb-961-tb-76-1974-cached-inline-styles" href="../wp-content/et-cache/1974/et-core-unified-tb-961-tb-76-1974.min.css_q_ver_e_1722632279.css" /><link rel="stylesheet" id="et-core-unified-tb-961-tb-76-deferred-1974-cached-inline-styles" href="../wp-content/et-cache/1974/et-core-unified-tb-961-tb-76-deferred-1974.min.css_q_ver_e_1722632279.css" /><style type="text/css">.mec-wrap, .mec-wrap div:not([class^="elementor-"]), .lity-container, .mec-wrap h1, .mec-wrap h2, .mec-wrap h3, .mec-wrap h4, .mec-wrap h5, .mec-wrap h6, .entry-content .mec-wrap h1, .entry-content .mec-wrap h2, .entry-content .mec-wrap h3, .entry-content .mec-wrap h4, .entry-content .mec-wrap h5, .entry-content .mec-wrap h6, .mec-wrap .mec-totalcal-box input[type="submit"], .mec-wrap .mec-totalcal-box .mec-totalcal-view span, .mec-agenda-event-title a, .lity-content .mec-events-meta-group-booking select, .lity-content .mec-book-ticket-variation h5, .lity-content .mec-events-meta-group-booking input[type="number"], .lity-content .mec-events-meta-group-booking input[type="text"], .lity-content .mec-events-meta-group-booking input[type="email"],.mec-organizer-item a, .mec-single-event .mec-events-meta-group-booking ul.mec-book-tickets-container li.mec-book-ticket-container label { font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;}.mec-event-content p, .mec-search-bar-result .mec-event-detail{ font-family: Roboto, sans-serif;} .mec-wrap .mec-totalcal-box input, .mec-wrap .mec-totalcal-box select, .mec-checkboxes-search .mec-searchbar-category-wrap, .mec-wrap .mec-totalcal-box .mec-totalcal-view span { font-family: "Roboto", Helvetica, Arial, sans-serif; }.mec-event-grid-modern .event-grid-modern-head .mec-event-day, .mec-event-list-minimal .mec-time-details, .mec-event-list-minimal .mec-event-detail, .mec-event-list-modern .mec-event-detail, .mec-event-grid-minimal .mec-time-details, .mec-event-grid-minimal .mec-event-detail, .mec-event-grid-simple .mec-event-detail, .mec-event-cover-modern .mec-event-place, .mec-event-cover-clean .mec-event-place, .mec-calendar .mec-event-article .mec-localtime-details div, .mec-calendar .mec-event-article .mec-event-detail, .mec-calendar.mec-calendar-daily .mec-calendar-d-top h2, .mec-calendar.mec-calendar-daily .mec-calendar-d-top h3, .mec-toggle-item-col .mec-event-day, .mec-weather-summary-temp { font-family: "Roboto", sans-serif; } .mec-fes-form, .mec-fes-list, .mec-fes-form input, .mec-event-date .mec-tooltip .box, .mec-event-status .mec-tooltip .box, .ui-datepicker.ui-widget, .mec-fes-form button[type="submit"].mec-fes-sub-button, .mec-wrap .mec-timeline-events-container p, .mec-wrap .mec-timeline-events-container h4, .mec-wrap .mec-timeline-events-container div, .mec-wrap .mec-timeline-events-container a, .mec-wrap .mec-timeline-events-container span { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important; }.mec-event-grid-minimal .mec-modal-booking-button:hover, .mec-events-timeline-wrap .mec-organizer-item a, .mec-events-timeline-wrap .mec-organizer-item:after, .mec-events-timeline-wrap .mec-shortcode-organizers i, .mec-timeline-event .mec-modal-booking-button, .mec-wrap .mec-map-lightbox-wp.mec-event-list-classic .mec-event-date, .mec-timetable-t2-col .mec-modal-booking-button:hover, .mec-event-container-classic .mec-modal-booking-button:hover, .mec-calendar-events-side .mec-modal-booking-button:hover, .mec-event-grid-yearly  .mec-modal-booking-button, .mec-events-agenda .mec-modal-booking-button, .mec-event-grid-simple .mec-modal-booking-button, .mec-event-list-minimal  .mec-modal-booking-button:hover, .mec-timeline-month-divider,  .mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span:hover,.mec-wrap.colorskin-custom .mec-calendar.mec-event-calendar-classic .mec-selected-day,.mec-wrap.colorskin-custom .mec-color, .mec-wrap.colorskin-custom .mec-event-sharing-wrap .mec-event-sharing > li:hover a, .mec-wrap.colorskin-custom .mec-color-hover:hover, .mec-wrap.colorskin-custom .mec-color-before *:before ,.mec-wrap.colorskin-custom .mec-widget .mec-event-grid-classic.owl-carousel .owl-nav i,.mec-wrap.colorskin-custom .mec-event-list-classic a.magicmore:hover,.mec-wrap.colorskin-custom .mec-event-grid-simple:hover .mec-event-title,.mec-wrap.colorskin-custom .mec-single-event .mec-event-meta dd.mec-events-event-categories:before,.mec-wrap.colorskin-custom .mec-single-event-date:before,.mec-wrap.colorskin-custom .mec-single-event-time:before,.mec-wrap.colorskin-custom .mec-events-meta-group.mec-events-meta-group-venue:before,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-previous-month i,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-next-month:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-previous-month:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-next-month:hover,.mec-wrap.colorskin-custom .mec-calendar.mec-event-calendar-classic dt.mec-selected-day:hover,.mec-wrap.colorskin-custom .mec-infowindow-wp h5 a:hover, .colorskin-custom .mec-events-meta-group-countdown .mec-end-counts h3,.mec-calendar .mec-calendar-side .mec-next-month i,.mec-wrap .mec-totalcal-box i,.mec-calendar .mec-event-article .mec-event-title a:hover,.mec-attendees-list-details .mec-attendee-profile-link a:hover,.mec-wrap.colorskin-custom .mec-next-event-details li i, .mec-next-event-details i:before, .mec-marker-infowindow-wp .mec-marker-infowindow-count, .mec-next-event-details a,.mec-wrap.colorskin-custom .mec-events-masonry-cats a.mec-masonry-cat-selected,.lity .mec-color,.lity .mec-color-before :before,.lity .mec-color-hover:hover,.lity .mec-wrap .mec-color,.lity .mec-wrap .mec-color-before :before,.lity .mec-wrap .mec-color-hover:hover,.leaflet-popup-content .mec-color,.leaflet-popup-content .mec-color-before :before,.leaflet-popup-content .mec-color-hover:hover,.leaflet-popup-content .mec-wrap .mec-color,.leaflet-popup-content .mec-wrap .mec-color-before :before,.leaflet-popup-content .mec-wrap .mec-color-hover:hover, .mec-calendar.mec-calendar-daily .mec-calendar-d-table .mec-daily-view-day.mec-daily-view-day-active.mec-color, .mec-map-boxshow div .mec-map-view-event-detail.mec-event-detail i,.mec-map-boxshow div .mec-map-view-event-detail.mec-event-detail:hover,.mec-map-boxshow .mec-color,.mec-map-boxshow .mec-color-before :before,.mec-map-boxshow .mec-color-hover:hover,.mec-map-boxshow .mec-wrap .mec-color,.mec-map-boxshow .mec-wrap .mec-color-before :before,.mec-map-boxshow .mec-wrap .mec-color-hover:hover, .mec-choosen-time-message, .mec-booking-calendar-month-navigation .mec-next-month:hover, .mec-booking-calendar-month-navigation .mec-previous-month:hover, .mec-yearly-view-wrap .mec-agenda-event-title a:hover, .mec-yearly-view-wrap .mec-yearly-title-sec .mec-next-year i, .mec-yearly-view-wrap .mec-yearly-title-sec .mec-previous-year i, .mec-yearly-view-wrap .mec-yearly-title-sec .mec-next-year:hover, .mec-yearly-view-wrap .mec-yearly-title-sec .mec-previous-year:hover, .mec-av-spot .mec-av-spot-head .mec-av-spot-box span, .mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-previous-month:hover .mec-load-month-link, .mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-next-month:hover .mec-load-month-link, .mec-yearly-view-wrap .mec-yearly-title-sec .mec-previous-year:hover .mec-load-month-link, .mec-yearly-view-wrap .mec-yearly-title-sec .mec-next-year:hover .mec-load-month-link, .mec-skin-list-events-container .mec-data-fields-tooltip .mec-data-fields-tooltip-box ul .mec-event-data-field-item a, .mec-booking-shortcode .mec-event-ticket-name, .mec-booking-shortcode .mec-event-ticket-price, .mec-booking-shortcode .mec-ticket-variation-name, .mec-booking-shortcode .mec-ticket-variation-price, .mec-booking-shortcode label, .mec-booking-shortcode .nice-select, .mec-booking-shortcode input, .mec-booking-shortcode span.mec-book-price-detail-description, .mec-booking-shortcode .mec-ticket-name, .mec-booking-shortcode label.wn-checkbox-label, .mec-wrap.mec-cart table tr td a {color: #70baaa}.mec-skin-carousel-container .mec-event-footer-carousel-type3 .mec-modal-booking-button:hover, .mec-wrap.colorskin-custom .mec-event-sharing .mec-event-share:hover .event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-grid-clean .mec-event-date,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing > li:hover a i,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing .mec-event-share:hover .mec-event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing li:hover a i,.mec-wrap.colorskin-custom .mec-calendar:not(.mec-event-calendar-classic) .mec-selected-day,.mec-wrap.colorskin-custom .mec-calendar .mec-selected-day:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-row  dt.mec-has-event:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-has-event:after, .mec-wrap.colorskin-custom .mec-bg-color, .mec-wrap.colorskin-custom .mec-bg-color-hover:hover, .colorskin-custom .mec-event-sharing-wrap:hover > li, .mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.mec-wrap .flip-clock-wrapper ul li a div div.inn,.mec-wrap .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.event-carousel-type1-head .mec-event-date-carousel,.mec-event-countdown-style3 .mec-event-date,#wrap .mec-wrap article.mec-event-countdown-style1,.mec-event-countdown-style1 .mec-event-countdown-part3 a.mec-event-button,.mec-wrap .mec-event-countdown-style2,.mec-map-get-direction-btn-cnt input[type="submit"],.mec-booking button,span.mec-marker-wrap,.mec-wrap.colorskin-custom .mec-timeline-events-container .mec-timeline-event-date:before, .mec-has-event-for-booking.mec-active .mec-calendar-novel-selected-day, .mec-booking-tooltip.multiple-time .mec-booking-calendar-date.mec-active, .mec-booking-tooltip.multiple-time .mec-booking-calendar-date:hover, .mec-ongoing-normal-label, .mec-calendar .mec-has-event:after, .mec-event-list-modern .mec-event-sharing li:hover .telegram{background-color: #70baaa;}.mec-booking-tooltip.multiple-time .mec-booking-calendar-date:hover, .mec-calendar-day.mec-active .mec-booking-tooltip.multiple-time .mec-booking-calendar-date.mec-active{ background-color: #70baaa;}.mec-skin-carousel-container .mec-event-footer-carousel-type3 .mec-modal-booking-button:hover, .mec-timeline-month-divider, .mec-wrap.colorskin-custom .mec-single-event .mec-speakers-details ul li .mec-speaker-avatar a:hover img,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing > li:hover a i,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing .mec-event-share:hover .mec-event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-list-standard .mec-month-divider span:before,.mec-wrap.colorskin-custom .mec-single-event .mec-social-single:before,.mec-wrap.colorskin-custom .mec-single-event .mec-frontbox-title:before,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-events-side .mec-table-side-day, .mec-wrap.colorskin-custom .mec-border-color, .mec-wrap.colorskin-custom .mec-border-color-hover:hover, .colorskin-custom .mec-single-event .mec-frontbox-title:before, .colorskin-custom .mec-single-event .mec-wrap-checkout h4:before, .colorskin-custom .mec-single-event .mec-events-meta-group-booking form > h4:before, .mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.mec-wrap .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.event-carousel-type1-head .mec-event-date-carousel:after,.mec-wrap.colorskin-custom .mec-events-masonry-cats a.mec-masonry-cat-selected, .mec-marker-infowindow-wp .mec-marker-infowindow-count, .mec-wrap.colorskin-custom .mec-events-masonry-cats a:hover, .mec-has-event-for-booking .mec-calendar-novel-selected-day, .mec-booking-tooltip.multiple-time .mec-booking-calendar-date.mec-active, .mec-booking-tooltip.multiple-time .mec-booking-calendar-date:hover, .mec-virtual-event-history h3:before, .mec-booking-tooltip.multiple-time .mec-booking-calendar-date:hover, .mec-calendar-day.mec-active .mec-booking-tooltip.multiple-time .mec-booking-calendar-date.mec-active, .mec-rsvp-form-box form > h4:before, .mec-wrap .mec-box-title::before, .mec-box-title::before  {border-color: #70baaa;}.mec-wrap.colorskin-custom .mec-event-countdown-style3 .mec-event-date:after,.mec-wrap.colorskin-custom .mec-month-divider span:before, .mec-calendar.mec-event-container-simple dl dt.mec-selected-day, .mec-calendar.mec-event-container-simple dl dt.mec-selected-day:hover{border-bottom-color:#70baaa;}.mec-wrap.colorskin-custom  article.mec-event-countdown-style1 .mec-event-countdown-part2:after{border-color: transparent transparent transparent #70baaa;}.mec-wrap.colorskin-custom .mec-box-shadow-color { box-shadow: 0 4px 22px -7px #70baaa;}.mec-events-timeline-wrap .mec-shortcode-organizers, .mec-timeline-event .mec-modal-booking-button, .mec-events-timeline-wrap:before, .mec-wrap.colorskin-custom .mec-timeline-event-local-time, .mec-wrap.colorskin-custom .mec-timeline-event-time ,.mec-wrap.colorskin-custom .mec-timeline-event-location,.mec-choosen-time-message { background: rgba(112,186,170,.11);}.mec-wrap.colorskin-custom .mec-timeline-events-container .mec-timeline-event-date:after{ background: rgba(112,186,170,.3);}.mec-booking-shortcode button { box-shadow: 0 2px 2px rgba(112 186 170 / 27%);}.mec-booking-shortcode button.mec-book-form-back-button{ background-color: rgba(112 186 170 / 40%);}.mec-events-meta-group-booking-shortcode{ background: rgba(112,186,170,.14);}.mec-booking-shortcode label.wn-checkbox-label, .mec-booking-shortcode .nice-select,.mec-booking-shortcode input, .mec-booking-shortcode .mec-book-form-gateway-label input[type=radio]:before, .mec-booking-shortcode input[type=radio]:checked:before, .mec-booking-shortcode ul.mec-book-price-details li, .mec-booking-shortcode ul.mec-book-price-details{ border-color: rgba(112 186 170 / 27%) !important;}.mec-booking-shortcode input::-webkit-input-placeholder,.mec-booking-shortcode textarea::-webkit-input-placeholder{color: #70baaa}.mec-booking-shortcode input::-moz-placeholder,.mec-booking-shortcode textarea::-moz-placeholder{color: #70baaa}.mec-booking-shortcode input:-ms-input-placeholder,.mec-booking-shortcode textarea:-ms-input-placeholder {color: #70baaa}.mec-booking-shortcode input:-moz-placeholder,.mec-booking-shortcode textarea:-moz-placeholder {color: #70baaa}.mec-booking-shortcode label.wn-checkbox-label:after, .mec-booking-shortcode label.wn-checkbox-label:before, .mec-booking-shortcode input[type=radio]:checked:after{background-color: #70baaa}</style></head>
+<body data-rsssl=1 class="project-template-default single single-project postid-1974 et-tb-has-template et-tb-has-body et-tb-has-footer cookies-not-set et_monarch et_button_no_icon et_pb_button_helper_class et_transparent_nav et_fullwidth_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_divi_theme et-db">
+	        <div id="plcover" style="background: #ffffff">
+            <div id="plcontent">
+                <div class="plcircle2" style="border-top-color: #70baaa;"></div>
+            </div>
+        </div>
+        <div id="page-container">
+<div id="et-boc" class="et-boc">
+			
+				<div id="top-header">
+		<div class="container clearfix">
+
+		
+			<div id="et-secondary-menu">
+			<ul class="et-social-icons">
+
+	<li class="et-social-icon et-social-facebook">
+		<a href="https://www.facebook.com/wmbiglocal/" class="icon">
+			<span>Facebook</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-twitter">
+		<a href="https://twitter.com/wmbiglocal" class="icon">
+			<span>X</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-instagram">
+		<a href="https://www.instagram.com/wmbiglocal/" class="icon">
+			<span>Instagram</span>
+		</a>
+	</li>
+
+</ul><ul id="et-secondary-nav" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26"><a>About</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-491"><a href="../index.html_q_p_e_381.html">What is William Morris Big Local?</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-841"><a href="../index.html_q_p_e_539.html">Your Big Local Plan</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-837"><a href="../index.html_q_p_e_564.html">Values &#038; themes</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1086"><a href="../index.html_q_p_e_936.html">Who’s involved</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-839"><a href="../index.html_q_p_e_526.html">Map of the area</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1238"><a href="../index.html_q_p_e_1170.html">Grants &#038; funding</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-836"><a href="../index.html_q_p_e_789.html">News</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1087"><a href="../contact.html">Contact us</a></li>
+</ul>			</div>
+
+		</div>
+	</div>
+
+
+	<header id="main-header" data-height-onload="100">
+		<div class="container clearfix et_menu_container">
+					<div class="logo_container">
+				<span class="logo_helper"></span>
+				<a href="../home.html">
+				<img src="../wp-content/uploads/2021/12/WMBL_FINALS-white-small.png" width="250" height="250" alt="William Morris Big Local" id="logo" data-height-percentage="90" />
+				</a>
+			</div>
+					<div id="et-top-navigation" data-height="100" data-fixed-height="48">
+									<nav id="top-menu-nav">
+					<ul id="top-menu" class="nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1088"><a href="../index.html_q_p_e_1013.html">What&#8217;s on</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-23"><a href="../index.html_q_p_e_1974.html#">Get involved</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1378"><a href="../index.html_q_p_e_1256.html">Volunteer</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1472"><a href="../index.html_q_p_e_1465.html">Join a theme group</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1473"><a href="../index.html_q_p_e_1457.html">Join the partnership</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1089"><a href="../index.html_q_p_e_955.html">Projects</a></li>
+</ul>					</nav>
+				
+				
+				
+									<div id="et_top_search">
+						<span id="et_search_icon"></span>
+					</div>
+				
+				<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>			</div> <!-- #et-top-navigation -->
+		</div> <!-- .container -->
+				<div class="et_search_outer">
+			<div class="container et_search_form_container">
+				<form role="search" method="get" class="et-search-form" action="../home.html">
+				<input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />				</form>
+				<span class="et_close_search_field"></span>
+			</div>
+		</div>
+			</header> <!-- #main-header -->
+<div id="et-main-area">
+	
+    <div id="main-content">
+    <div class="et-l et-l--body">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div class="et_pb_section et_pb_section_0_tb_body et_pb_with_background et_section_regular section_has_divider et_pb_bottom_divider" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_body  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_body  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><span style="background: #ffffff;border-radius: 18px;padding: 4px 12px">Community</span></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_1_tb_body  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1>No Pasarán documentary</h1></div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_0_tb_body header-underline">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async"  src="../wp-content/uploads/2022/01/zigzag.svg" alt="" title="zigzag" class="wp-image-369" /></span>
+			</div><div class="et_pb_module et_pb_image et_pb_image_1_tb_body">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" loading="lazy" width="365" height="365" src="../wp-content/uploads/2022/01/hoop-yellow.png" alt="" title="hoop-yellow" srcset="../wp-content/uploads/2022/01/hoop-yellow.png 365w, ../wp-content/uploads/2022/01/hoop-yellow-300x300.png 300w, ../wp-content/uploads/2022/01/hoop-yellow-150x150.png 150w" sizes="(max-width: 365px) 100vw, 365px" class="wp-image-619" /></span>
+			</div><div class="et_pb_module et_pb_code et_pb_code_0_tb_body">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><style>
+#top-header, .et-fixed-header#top-header, #et-secondary-nav li ul, .et-fixed-header#top-header #et-secondary-nav li ul {
+    background-color: #e4a93d;
+}
+</style></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				<div class="et_pb_bottom_inside_divider et-no-transition"></div>
+			</div><div class="et_pb_section et_pb_section_1_tb_body et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_1_tb_body  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_2_tb_body">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" loading="lazy" width="2560" height="1440" src="../wp-content/uploads/2022/10/WMBL-poster.jpg" alt="No Pasaran -Movie poster" title="No Pasaran -Movie poster" srcset="../wp-content/uploads/2022/10/WMBL-poster.jpg 2560w, ../wp-content/uploads/2022/10/WMBL-poster-1280x720.jpg 1280w, ../wp-content/uploads/2022/10/WMBL-poster-980x551.jpg 980w, ../wp-content/uploads/2022/10/WMBL-poster-480x270.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 2560px, 100vw" class="wp-image-1976" /></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_2_tb_body et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_2_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2_tb_body  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_post_content et_pb_post_content_0_tb_body post-content">
+				
+				
+				
+				
+				<div class="et-l et-l--post">
+			<div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0 intro-text  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>No pasarán documentary was created to commemorate the tenth-year anniversary of the residents of  Walthamstow coming together to defend its multicultural community from the fascist EDL.</p></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_1 tick-list-green  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Watch these emotional tales of East London residents standing together against the threat of fascism on their doorstep.</p>
+<p>This film was funded by the William Morris Big Local Community fund, and filmed by Napier Films and We Are Waltham Forest.</p>
+<p>Directed by Naomi Soneye-Thomas and Sophie Bolt. Produced by Sophie Bolt.<br />Filmed, edited and narrated by Naomi Soneye-Thomas. Colourist Emma Johnson. Edit Assistant Daryl Lawrence.</p></div>
+			</div><div class="et_pb_module et_pb_video et_pb_video_0">
+				
+				
+				
+				
+				<div class="et_pb_video_box"><iframe loading="lazy" title="No Pasarán: how we defeated the EDL in Waltham Forest" width="1080" height="608" src="https://www.youtube.com/embed/P7WVjW_e25s?feature=oembed"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+				<div style="background-image:url(../wp-content/uploads/2022/10/WMBL-poster.jpg)" class="et_pb_video_overlay"><div class="et_pb_video_overlay_hover"><a href="../index.html_q_p_e_1974.html#" class="et_pb_video_play"></a></div></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</div>
+	
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_4_tb_body et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_3_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_3_tb_body  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_2_tb_body  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>Discover more</h2></div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_3_tb_body">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async"  src="../wp-content/uploads/2022/01/zigzag.svg" alt="" title="zigzag" class="wp-image-369" /></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_4_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_4_tb_body  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_post_nav_0_tb_body et_pb_posts_nav nav-single">
+								<span class="nav-previous"
+									>
+					<a href="../index.html_q_p_e_1945.html" rel="prev">
+												<span class="meta-nav">&larr; </span><span class="nav-label">William Morris Close Garages</span>
+					</a>
+				</span>
+							<span class="nav-next"
+									>
+					<a href="../index.html_q_p_e_2020.html" rel="next">
+												<span class="nav-label">Community Living Rooms</span><span class="meta-nav"> &rarr;</span>
+					</a>
+				</span>
+			
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</div>
+	    </div>
+    
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div class="et_pb_section et_pb_section_0_tb_footer et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_0_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" loading="lazy" width="1920" height="269" src="../wp-content/uploads/2022/03/footer-buildings3.png" alt="" title="footer-buildings3" srcset="../wp-content/uploads/2022/03/footer-buildings3.png 1920w, ../wp-content/uploads/2022/03/footer-buildings3-1280x179.png 1280w, ../wp-content/uploads/2022/03/footer-buildings3-980x137.png 980w, ../wp-content/uploads/2022/03/footer-buildings3-480x67.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1920px, 100vw" class="wp-image-1475" /></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_2_tb_footer et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1_tb_footer et_pb_gutters4">
+				<div class="et_pb_column et_pb_column_1_3 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_1_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" loading="lazy" width="150" height="150" src="../wp-content/uploads/2021/12/WMBL_FINALS-white-small-150x150.png" alt="WMBL logo" title="WMBL_FINALS-white-small" srcset="../wp-content/uploads/2021/12/WMBL_FINALS-white-small-150x150.png 150w, ../wp-content/uploads/2021/12/WMBL_FINALS-white-small.png 250w" sizes="(max-width: 150px) 100vw, 150px" class="wp-image-16" /></span>
+			</div><div class="et_pb_module et_pb_image et_pb_image_2_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" loading="lazy" width="149" height="100" src="../wp-content/uploads/2021/12/LotteryFunded-white.png" alt="Lottery Funded logo" title="LotteryFunded-white" class="wp-image-85" /></span>
+			</div><div class="et_pb_module et_pb_search et_pb_search_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_light et_pb_hide_search_button">
+				
+				
+				
+				
+				<form role="search" method="get" class="et_pb_searchform" action="../home.html">
+					<div>
+						<label class="screen-reader-text" for="s">Search for:</label>
+						<input type="text" name="s" placeholder="Search" class="et_pb_s" />
+						<input type="hidden" name="et_pb_searchform_submit" value="et_search_proccess" />
+						
+						<input type="hidden" name="et_pb_include_posts" value="yes" />
+						<input type="hidden" name="et_pb_include_pages" value="yes" />
+						<input type="submit" value="Search" class="et_pb_searchsubmit">
+					</div>
+				</form>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h5>Quick links</h5></div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_3_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async"  src="../wp-content/uploads/2022/01/zigzag.svg" alt="" title="zigzag" class="wp-image-369" /></span>
+			</div><div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="display: block;"><a href="../index.html_q_p_e_381.html">About us</a></p>
+<p style="display: block;"><a href="../index.html_q_p_e_539.html">Big Local Plan</a></p>
+<p style="display: block;"><a href="../index.html_q_p_e_1170.html">Grants &amp; funding</a></p></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_2_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><a href="../index.html_q_p_e_1256.html">Volunteer</a></p>
+<p><a href="../index.html_q_p_e_1013.html">Events</a></p>
+<p><a href="../contact.html">Contact us</a></p></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_3_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h5>Connect</h5></div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_4_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async"  src="../wp-content/uploads/2022/01/zigzag.svg" alt="" title="zigzag" class="wp-image-369" /></span>
+			</div><ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_bg_layout_light">
+				
+				
+				
+				
+				<li
+            class='et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-facebook'><a
+              href='https://www.facebook.com/wmbiglocal/'
+              class='icon et_pb_with_border'
+              title='Follow on Facebook'
+               target="_blank"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Follow</span></a></li><li
+            class='et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-twitter'><a
+              href='https://twitter.com/wmbiglocal'
+              class='icon et_pb_with_border'
+              title='Follow on X'
+               target="_blank"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Follow</span></a></li><li
+            class='et_pb_social_media_follow_network_2_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-instagram'><a
+              href='https://www.instagram.com/wmbiglocal/'
+              class='icon et_pb_with_border'
+              title='Follow on Instagram'
+               target="_blank"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Follow</span></a></li>
+			</ul><div class="et_pb_module et_pb_text et_pb_text_4_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>© 2021 William Morris Big Local<br />Big Creative Academy<br />38 Clifton Avenue<br />Walthamstow, E17 6HL</p>
+<p><a href="../index.html_q_p_e_3.html">Privacy policy</a></p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</footer>
+		</div>
+
+			
+		</div>
+		</div>
+
+			<div class="et_social_sidebar_networks et_social_visible_sidebar et_social_slideright et_social_animated et_social_circle et_social_sidebar_grow et_social_mobile_on">
+					
+					<ul class="et_social_icons_container"><li class="et_social_facebook">
+									<a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwmbiglocal.org%2Fproject%2Fno-pasaran-documentary&#038;t=No%20Pasar%C3%A1n%20documentary" class="et_social_share" rel="nofollow" data-social_name="facebook" data-post_id="1974" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_facebook"></i>
+										
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li><li class="et_social_twitter">
+									<a href="http://twitter.com/share?text=No%20Pasar%C3%A1n%20documentary&#038;url=https%3A%2F%2Fwmbiglocal.org%2Fproject%2Fno-pasaran-documentary&#038;via=wmbiglocal" class="et_social_share" rel="nofollow" data-social_name="twitter" data-post_id="1974" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_twitter"></i>
+										
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li><li class="et_social_linkedin">
+									<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=https%3A%2F%2Fwmbiglocal.org%2Fproject%2Fno-pasaran-documentary&#038;title=No%20Pasar%C3%A1n%20documentary" class="et_social_share" rel="nofollow" data-social_name="linkedin" data-post_id="1974" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_linkedin"></i>
+										
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li><li class="et_social_gmail">
+									<a href="https://mail.google.com/mail/u/0/?view=cm&#038;fs=1&#038;su=No%20Pasar%C3%A1n%20documentary&#038;body=https%3A%2F%2Fwmbiglocal.org%2Fproject%2Fno-pasaran-documentary&#038;ui=2&#038;tf=1" class="et_social_share" rel="nofollow" data-social_name="gmail" data-post_id="1974" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_gmail"></i>
+										
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li><li class="et_social_printfriendly">
+									<a href="http://www.printfriendly.com/print?url=https%3A%2F%2Fwmbiglocal.org%2Fproject%2Fno-pasaran-documentary&#038;title=No%20Pasar%C3%A1n%20documentary" class="et_social_share" rel="nofollow" data-social_name="printfriendly" data-post_id="1974" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_printfriendly"></i>
+										
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li></ul>
+					<span class="et_social_hide_sidebar et_social_icon"></span>
+				</div><div class="et_social_mobile_button"></div>
+					<div class="et_social_mobile et_social_fadein">
+						<div class="et_social_heading">Share This</div>
+						<span class="et_social_close"></span>
+						<div class="et_social_networks et_social_simple et_social_rounded et_social_left">
+							<ul class="et_social_icons_container"><li class="et_social_facebook">
+									<a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwmbiglocal.org%2Fproject%2Fno-pasaran-documentary&#038;t=No%20Pasar%C3%A1n%20documentary" class="et_social_share" rel="nofollow" data-social_name="facebook" data-post_id="1974" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_facebook"></i>
+										<div class="et_social_network_label"><div class="et_social_networkname">Facebook</div></div>
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li><li class="et_social_twitter">
+									<a href="http://twitter.com/share?text=No%20Pasar%C3%A1n%20documentary&#038;url=https%3A%2F%2Fwmbiglocal.org%2Fproject%2Fno-pasaran-documentary&#038;via=wmbiglocal" class="et_social_share" rel="nofollow" data-social_name="twitter" data-post_id="1974" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_twitter"></i>
+										<div class="et_social_network_label"><div class="et_social_networkname">Twitter</div></div>
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li><li class="et_social_linkedin">
+									<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=https%3A%2F%2Fwmbiglocal.org%2Fproject%2Fno-pasaran-documentary&#038;title=No%20Pasar%C3%A1n%20documentary" class="et_social_share" rel="nofollow" data-social_name="linkedin" data-post_id="1974" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_linkedin"></i>
+										<div class="et_social_network_label"><div class="et_social_networkname">LinkedIn</div></div>
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li><li class="et_social_gmail">
+									<a href="https://mail.google.com/mail/u/0/?view=cm&#038;fs=1&#038;su=No%20Pasar%C3%A1n%20documentary&#038;body=https%3A%2F%2Fwmbiglocal.org%2Fproject%2Fno-pasaran-documentary&#038;ui=2&#038;tf=1" class="et_social_share" rel="nofollow" data-social_name="gmail" data-post_id="1974" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_gmail"></i>
+										<div class="et_social_network_label"><div class="et_social_networkname">Gmail</div></div>
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li><li class="et_social_printfriendly">
+									<a href="http://www.printfriendly.com/print?url=https%3A%2F%2Fwmbiglocal.org%2Fproject%2Fno-pasaran-documentary&#038;title=No%20Pasar%C3%A1n%20documentary" class="et_social_share" rel="nofollow" data-social_name="printfriendly" data-post_id="1974" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_printfriendly"></i>
+										<div class="et_social_network_label"><div class="et_social_networkname">Print Friendly</div></div>
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li></ul>
+						</div>
+					</div>
+					<div class="et_social_mobile_overlay"></div><script type='text/javascript' src='../wp-includes/js/jquery/ui/core.min.js_q_ver_e_1.13.2' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/datepicker.min.js_q_ver_e_1.13.2' id='jquery-ui-datepicker-js'></script>
+<script id="jquery-ui-datepicker-js-after" type="text/javascript">
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='../wp-content/plugins/modern-events-calendar-lite/assets/js/isotope.pkgd.min.js_q_ver_e_6.5.2' id='mec-isotope-script-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/modern-events-calendar-lite/assets/js/imagesload.js_q_ver_e_6.5.2' id='mec-imagesload-script-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/modern-events-calendar-lite/assets/js/jquery.typewatch.js_q_ver_e_6.5.2' id='mec-typekit-script-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/modern-events-calendar-lite/assets/packages/featherlight/featherlight.js_q_ver_e_6.5.2' id='featherlight-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/modern-events-calendar-lite/assets/packages/select2/select2.full.min.js_q_ver_e_6.5.2' id='mec-select2-script-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/modern-events-calendar-lite/assets/packages/tooltip/tooltip.js_q_ver_e_6.5.2' id='mec-tooltip-script-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/modern-events-calendar-lite/assets/packages/lity/lity.min.js_q_ver_e_6.5.2' id='mec-lity-script-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/modern-events-calendar-lite/assets/packages/colorbrightness/colorbrightness.min.js_q_ver_e_6.5.2' id='mec-colorbrightness-script-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/modern-events-calendar-lite/assets/packages/owl-carousel/owl.carousel.min.js_q_ver_e_6.5.2' id='mec-owl-carousel-script-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/wp-team-pro/public/js/preloader.min.js_q_ver_e_2.0.5' id='wptpro-preloader-js-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/monarch/js/idle-timer.min.js_q_ver_e_1.4.14' id='et_monarch-idle-js'></script>
+<script type='text/javascript' id='et_monarch-custom-js-js-extra'>
+/* <![CDATA[ */
+var monarchSettings = {"ajaxurl":"https:\/\/wmbiglocal.org\/wp-admin\/admin-ajax.php","pageurl":"https:\/\/wmbiglocal.org\/project\/no-pasaran-documentary","stats_nonce":"f9793be35e","share_counts":"23e39f0ef7","follow_counts":"6bcee469fe","total_counts":"093ee74d89","media_single":"746a541ce0","media_total":"21953372b5","generate_all_window_nonce":"6d4943e1b9","no_img_message":"No images available for sharing on this page"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/monarch/js/custom.js_q_ver_e_1.4.14' id='et_monarch-custom-js-js'></script>
+<script type='text/javascript' src='../wp-includes/js/comment-reply.min.js_q_ver_e_6.3.5' id='comment-reply-js'></script>
+<script type='text/javascript' id='divi-custom-script-js-extra'>
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/wmbiglocal.org\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/wmbiglocal.org\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/wmbiglocal.org\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"9a8f685b78","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"d8350f500f","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"1974","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/wmbiglocal.org\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#70baaa","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/Divi/js/scripts.min.js_q_ver_e_4.25.1' id='divi-custom-script-js'></script>
+<script type='text/javascript' src='../wp-content/themes/Divi/js/smoothscroll.js_q_ver_e_4.25.1' id='smoothscroll-js'></script>
+<script type='text/javascript' src='../wp-content/themes/Divi/core/admin/js/es6-promise.auto.min.js_q_ver_e_4.25.1' id='es6-promise-js'></script>
+<script type='text/javascript' data-src='https://www.google.com/recaptcha/api.js?render=6LeqlnwjAAAAAAAxDO_O_4FFk2gkoSCifsT8KorX&#038;ver=4.25.1' id='et-recaptcha-v3-js'></script>
+<script type='text/javascript' id='et-core-api-spam-recaptcha-js-extra'>
+/* <![CDATA[ */
+var et_core_api_spam_recaptcha = {"site_key":"6LeqlnwjAAAAAAAxDO_O_4FFk2gkoSCifsT8KorX","page_action":{"action":"no_pasaran_documentary"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/Divi/core/admin/js/recaptcha.js_q_ver_e_4.25.1' id='et-core-api-spam-recaptcha-js'></script>
+<script type='text/javascript' src='../wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js_q_ver_e_4.25.1' id='fitvids-js'></script>
+<script type='text/javascript' src='../wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js_q_ver_e_4.25.1' id='jquery-mobile-js'></script>
+<script type='text/javascript' src='../wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js_q_ver_e_4.25.1' id='magnific-popup-js'></script>
+<script type='text/javascript' src='../wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js_q_ver_e_4.25.1' id='easypiechart-js'></script>
+<script type='text/javascript' src='../wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js_q_ver_e_4.25.1' id='salvattore-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/modern-events-calendar-lite/app/addons/divi/scripts/frontend-bundle.min.js_q_ver_e_1.0.0' id='divi-frontend-bundle-js'></script>
+<script type='text/javascript' src='../wp-content/themes/Divi/core/admin/js/common.js_q_ver_e_4.25.1' id='et-core-common-js'></script>
+<script type='text/javascript' id='et-builder-modules-script-motion-js-extra'>
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js_q_ver_e_4.25.1' id='et-builder-modules-script-motion-js'></script>
+<script type='text/javascript' id='et-builder-modules-script-sticky-js-extra'>
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js_q_ver_e_4.25.1' id='et-builder-modules-script-sticky-js'></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            for (let i = 0; i < document.forms.length; ++i) {
+                let form = document.forms[i];
+				if ($(form).attr("method") != "get") { $(form).append('<input type="hidden" name="AUQXnLvZj" value="kGVrRyjZtAsiD" />'); }
+if ($(form).attr("method") != "get") { $(form).append('<input type="hidden" name="dZbgoNqJC-uvPHkT" value="7W34h_KmIFHkM" />'); }
+            }
+
+            $(document).on('submit', 'form', function () {
+				if ($(this).attr("method") != "get") { $(this).append('<input type="hidden" name="AUQXnLvZj" value="kGVrRyjZtAsiD" />'); }
+if ($(this).attr("method") != "get") { $(this).append('<input type="hidden" name="dZbgoNqJC-uvPHkT" value="7W34h_KmIFHkM" />'); }
+                return true;
+            });
+
+            jQuery.ajaxSetup({
+                beforeSend: function (e, data) {
+
+                    if (data.type !== 'POST') return;
+
+                    if (typeof data.data === 'object' && data.data !== null) {
+						data.data.append("AUQXnLvZj", "kGVrRyjZtAsiD");
+data.data.append("dZbgoNqJC-uvPHkT", "7W34h_KmIFHkM");
+                    }
+                    else {
+                        data.data = data.data + '&AUQXnLvZj=kGVrRyjZtAsiD&dZbgoNqJC-uvPHkT=7W34h_KmIFHkM';
+                    }
+                }
+            });
+
+        });
+    </script>
+		
+			<span class="et_pb_scroll_top et-pb-icon"></span>
+	</body>
+</html>
+
+<!-- Cached by WP-Optimize - https://getwpo.com - Last modified: August 5, 2024 1:49 pm (UTC:0) -->

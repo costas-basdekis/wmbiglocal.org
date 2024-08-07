@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.5.2//EN
+X-ORIGINAL-URL:https://wmbiglocal.org/
+X-WR-CALNAME:William Morris Big Local
+X-WR-CALDESC:Empowering our community
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+DTSTART;TZID=UTC:20230916T103000
+DTEND;TZID=UTC:20230916T120000
+DTSTAMP:20230323T162300
+UID:MEC-4aecfbe5d21e3f7912bf8eb29124423a@wmbiglocal.org
+CREATED:20230323
+LAST-MODIFIED:20230908
+PRIORITY:5
+TRANSP:OPAQUE
+SUMMARY:World Clean Up Day
+DESCRIPTION:[et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.22.1″ _dynamic_attributes=”background_image” _module_preset=”default” use_background_color_gradient=”on” background_color_gradient_stops=”rgba(0,0,0,0) 0%|rgba(0,0,0,0.4) 100%” background_color_gradient_overlays_image=”on” background_color_gradient_start=”rgba(0,0,0,0)” background_color_gradient_end=”rgba(0,0,0,0.4)” background_image=”@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF9mZWF0dXJlZF9pbWFnZSIsInNldHRpbmdzIjp7fX0=@” custom_padding=”200px||60px||false|false” custom_padding_tablet=”80px||40px||false|false” custom_padding_phone=”60px||0px||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_text _builder_version=”4.16″ _dynamic_attributes=”content” _module_preset=”default” header_font=”|700|||||||” header_text_color=”#FFFFFF” header_line_height=”1.2em” global_colors_info=”{}”]@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF90aXRsZSIsInNldHRpbmdzIjp7ImJlZm9yZSI6IjxoMT4iLCJhZnRlciI6IjwvaDE+In19@[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section][et_pb_section fb_built=”1″ theme_builder_area=”post_content” _builder_version=”4.22.1″ _module_preset=”default”][et_pb_row _builder_version=”4.22.1″ _module_preset=”default” theme_builder_area=”post_content”][et_pb_column _builder_version=”4.22.1″ _module_preset=”default” type=”4_4″ theme_builder_area=”post_content”][et_pb_text _builder_version=”4.22.1″ _module_preset=”default” theme_builder_area=”post_content” hover_enabled=”0″ sticky_enabled=”0″]\nSupport World Clean Up Day!\nAston Group, WMBL and the William Morris Ward Association are taking part in a Community Litter Pick in aid of World Clean Up Day. Join us and unite with litter pickers to tackle the rubbish around South Countess Road and make the area nicer for all!  Equipment and gloves are provided but you can bring your own gloves if you like. All rubbish will be recycled where possible.\nMeet at 10.30am – Priory Court Community Centre, E17 5NB. Children must be accompanied by an adult.\n[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section]\n
+URL:https://wmbiglocal.org/events/world-clean-up-day
+ORGANIZER;CN=Aston Group:MAILTO:R.Statter@astongroup.co.uk
+CATEGORIES:Community
+LOCATION:Priory Court Community Centre, E17 5NB
+ATTACH;FMTTYPE=image/png:https://wmbiglocal.org/wp-content/uploads/2023/03/Community-Litter-Pick-Sep-23-v1-1.png
+END:VEVENT
+END:VCALENDAR

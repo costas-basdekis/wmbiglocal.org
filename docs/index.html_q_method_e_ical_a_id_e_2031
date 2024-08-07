@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.5.2//EN
+X-ORIGINAL-URL:https://wmbiglocal.org/
+X-WR-CALNAME:William Morris Big Local
+X-WR-CALDESC:Empowering our community
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+DTSTART;TZID=UTC:20240808T120000
+DTEND;TZID=UTC:20240808T170000
+DTSTAMP:20221205T121400
+UID:MEC-88ef51f0bf911e452e8dbb1d807a81ab@wmbiglocal.org
+RRULE:FREQ=WEEKLY
+CREATED:20221205
+LAST-MODIFIED:20230411
+PRIORITY:5
+TRANSP:OPAQUE
+SUMMARY:Community Living Room in Priory Court community centre
+DESCRIPTION:[et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.18.0″ _dynamic_attributes=”background_image” _module_preset=”default” use_background_color_gradient=”on” background_color_gradient_stops=”rgba(0,0,0,0) 0%|rgba(0,0,0,0.4) 100%” background_color_gradient_overlays_image=”on” background_color_gradient_start=”rgba(0,0,0,0)” background_color_gradient_end=”rgba(0,0,0,0.4)” background_image=”@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF9mZWF0dXJlZF9pbWFnZSIsInNldHRpbmdzIjp7fX0=@” custom_padding=”200px||60px||false|false” custom_padding_tablet=”80px||40px||false|false” custom_padding_phone=”60px||0px||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_text _builder_version=”4.16″ _dynamic_attributes=”content” _module_preset=”default” header_font=”|700|||||||” header_text_color=”#FFFFFF” header_line_height=”1.2em” global_colors_info=”{}”]@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF90aXRsZSIsInNldHRpbmdzIjp7ImJlZm9yZSI6IjxoMT4iLCJhZnRlciI6IjwvaDE+In19@[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section][et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.16″ _module_preset=”default” custom_padding=”60px||0px|||” custom_padding_tablet=”60px||0px|||” custom_padding_phone=”40px||||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.16″ _module_preset=”default” width=”100%” custom_padding=”0px||||false|false” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_text module_class=”tick-list-green” _builder_version=”4.20.0″ _module_preset=”default” locked=”off” global_colors_info=”{}”]\nThe Community Living Room at Priory Court Community Centre is a warm and welcoming space where people can relax, play, socialise or simply sit by oneself in comfort. This space is run by William Morris Big Local and funded by Waltham Forest council funding.\nThe following activities, facilities and support will be on offer:\nComfortable seating in a relaxed space.Tea, coffee, cake, biscuits, fruit.\nQuiet solo activities: Books, newspapers, jigsaws, word searches etc.\nCreative activities: knitting, sewing, drawing, painting.\nSocial activities such as board games and cards.\nOpening times: Every Monday and Thursday 12pm – 5pm.\nLocation: Priory Court Community Centre, 11 Priory Court, E17 5NB.\n \n \n[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section]\n
+URL:https://wmbiglocal.org/events/community-living-room-in-priory-court-thu
+ORGANIZER;CN=William Morris Big Local:MAILTO:
+CATEGORIES:Community
+LOCATION:E17 5NB
+ATTACH;FMTTYPE=image/jpeg:https://wmbiglocal.org/wp-content/uploads/2022/12/WhatsApp-Image-2023-02-22-at-10.35.20.jpeg
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:mec="http://webnus.net/rss/mec/"
+    xmlns:media="http://search.yahoo.com/mrss/"
+	    >
+<channel>
+	<title>Outdoor Spaces Archives | William Morris Big Local</title>
+	<atom:link href="../../mec-category/outdoor-spaces/feed" rel="self" type="application/rss+xml" />
+	<link>https://wmbiglocal.org/mec-category/outdoor-spaces</link>
+	<description>Empowering our community</description>
+	<lastBuildDate>Tue, 30 Jul 2024 14:23:31 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.3.5</generator>
+
+<image>
+	<url>https://wmbiglocal.org/wp-content/uploads/2022/01/cropped-favicon-32x32.png</url>
+	<title>Outdoor Spaces Archives | William Morris Big Local</title>
+	<link>https://wmbiglocal.org/mec-category/outdoor-spaces</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+    
+    
+</channel>
+</rss>

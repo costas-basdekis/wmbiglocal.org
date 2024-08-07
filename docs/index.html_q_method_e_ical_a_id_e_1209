@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.5.2//EN
+X-ORIGINAL-URL:https://wmbiglocal.org/
+X-WR-CALNAME:William Morris Big Local
+X-WR-CALDESC:Empowering our community
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+DTSTART;TZID=UTC:20220324T140000
+DTEND;TZID=UTC:20220324T180000
+DTSTAMP:20220310T124000
+UID:MEC-7e7e69ea3384874304911625ac34321c@wmbiglocal.org
+CREATED:20220310
+LAST-MODIFIED:20220323
+PRIORITY:5
+TRANSP:OPAQUE
+SUMMARY:William Morris’s birthday tea and cake party
+DESCRIPTION:[et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.14.7″ _dynamic_attributes=”background_image” _module_preset=”default” use_background_color_gradient=”on” background_color_gradient_start=”rgba(0,0,0,0)” background_color_gradient_end=”rgba(0,0,0,0.4)” background_color_gradient_overlays_image=”on” background_image=”@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF9mZWF0dXJlZF9pbWFnZSIsInNldHRpbmdzIjp7fX0=@” custom_padding=”200px||60px||false|false” custom_padding_tablet=”80px||40px||false|false” custom_padding_phone=”60px||0px||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.14.7″ _module_preset=”default” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.14.7″ _module_preset=”default” global_colors_info=”{}”][et_pb_text _builder_version=”4.14.7″ _dynamic_attributes=”content” _module_preset=”default” header_font=”|700|||||||” header_text_color=”#FFFFFF” header_line_height=”1.2em” global_colors_info=”{}”]@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF90aXRsZSIsInNldHRpbmdzIjp7ImJlZm9yZSI6IjxoMT4iLCJhZnRlciI6IjwvaDE+In19@[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section][et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.14.7″ _module_preset=”default” custom_padding=”60px||0px|||” custom_padding_tablet=”60px||0px|||” custom_padding_phone=”40px||||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.14.7″ _module_preset=”default” width=”100%” custom_padding=”0px||||false|false” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.14.5″ _module_preset=”default” global_colors_info=”{}”][et_pb_text module_class=”tick-list-green” _builder_version=”4.14.7″ _module_preset=”default” custom_padding=”||3px|||” locked=”off” global_colors_info=”{}”]\nWilliam Morris was born on 24th March 1834, in Walthamstow.Many buildings and places in the area are named after him, including this Big Local, and commemorate his work as a designer, craftsman, poet, writer, and early socialist.We will be celebrating William Morris’s birthday outside the William Morris Gallery.Come and join us for tea and cake!\n[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section]\n
+URL:https://wmbiglocal.org/events/william-morriss-birthday-tea-and-cake-party
+ORGANIZER;CN=William Morris Big Local:MAILTO:
+CATEGORIES:Community
+LOCATION:Lloyd Park, Forest Rd, London E17 4PP
+ATTACH;FMTTYPE=image/jpeg:https://wmbiglocal.org/wp-content/uploads/2022/03/william-morris-bio-1.jpg
+END:VEVENT
+END:VCALENDAR

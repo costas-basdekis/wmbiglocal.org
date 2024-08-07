@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'BrownStd';
+    src: url('BrownStd-BoldItalic.woff2') format('woff2'),
+        url('BrownStd-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownStd';
+    src: url('BrownStd-Light.woff2') format('woff2'),
+        url('BrownStd-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownStd';
+    src: url('BrownStd-Regular.woff2') format('woff2'),
+        url('BrownStd-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownStd';
+    src: url('BrownStd-Bold.woff2') format('woff2'),
+        url('BrownStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownStd';
+    src: url('BrownStd-Italic.woff2') format('woff2'),
+        url('BrownStd-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

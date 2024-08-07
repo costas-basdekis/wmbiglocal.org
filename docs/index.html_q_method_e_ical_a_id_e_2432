@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.5.2//EN
+X-ORIGINAL-URL:https://wmbiglocal.org/
+X-WR-CALNAME:William Morris Big Local
+X-WR-CALDESC:Empowering our community
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+DTSTART;TZID=UTC:20240222T181500
+DTEND;TZID=UTC:20240222T203000
+DTSTAMP:20240122T154400
+UID:MEC-d16509f6eaca1022bd8f28d6bc582cae@wmbiglocal.org
+CREATED:20240122
+LAST-MODIFIED:20240122
+PRIORITY:5
+TRANSP:OPAQUE
+SUMMARY:Community AGM
+DESCRIPTION:[et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.16″ _dynamic_attributes=”background_image” _module_preset=”default” use_background_color_gradient=”on” background_color_gradient_stops=”rgba(0,0,0,0) 0%|rgba(0,0,0,0.4) 100%” background_color_gradient_overlays_image=”on” background_color_gradient_start=”rgba(0,0,0,0)” background_color_gradient_end=”rgba(0,0,0,0.4)” background_image=”@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF9mZWF0dXJlZF9pbWFnZSIsInNldHRpbmdzIjp7fX0=@” custom_padding=”200px||60px||false|false” custom_padding_tablet=”80px||40px||false|false” custom_padding_phone=”60px||0px||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_text _builder_version=”4.16″ _dynamic_attributes=”content” _module_preset=”default” header_font=”|700|||||||” header_text_color=”#FFFFFF” header_line_height=”1.2em” global_colors_info=”{}”]@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF90aXRsZSIsInNldHRpbmdzIjp7ImJlZm9yZSI6IjxoMT4iLCJhZnRlciI6IjwvaDE+In19@[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section][et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.16″ _module_preset=”default” custom_padding=”60px||0px|||” custom_padding_tablet=”60px||0px|||” custom_padding_phone=”40px||||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.16″ _module_preset=”default” width=”100%” custom_padding=”0px||||false|false” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_text module_class=”tick-list-green” _builder_version=”4.22.1″ _module_preset=”default” custom_padding=”||3px|||” hover_enabled=”0″ locked=”off” global_colors_info=”{}” sticky_enabled=”0″]\nJoin us for an AGM like no other in the fabulous setting of the Big Local Theatre at Big Creative Academy. We’ve got interactive presentations and updates from across our projects as well as a taster of what William Morris Big Local is funding in the local community. It’s a chance for us to celebrate our work, our partners, and our volunteers and importantly an opportunity for anyone to come along and see about getting involved. As this is our last year of core Big Local funding we’ll have updates about what’s coming next all topped off with light refreshments and a chance to chit chat afterwards. To book your place just click the red button on the right of this page and it will take you to a quick booking form on Eventbrite.\n[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section]\n
+URL:https://wmbiglocal.org/events/community-agm
+ORGANIZER;CN=William Morris Big Local:MAILTO:
+CATEGORIES:Community,Outdoor Spaces,Local Economy
+LOCATION:38 Clifton Avenue, Walthamstow, E17 6HL
+ATTACH;FMTTYPE=image/jpeg:https://wmbiglocal.org/wp-content/uploads/2023/10/AGM_2022.jpg
+END:VEVENT
+END:VCALENDAR

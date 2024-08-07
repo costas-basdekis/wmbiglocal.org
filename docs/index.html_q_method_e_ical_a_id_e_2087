@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.5.2//EN
+X-ORIGINAL-URL:https://wmbiglocal.org/
+X-WR-CALNAME:William Morris Big Local
+X-WR-CALDESC:Empowering our community
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+DTSTART;TZID=UTC:20230211T100000
+DTEND;TZID=UTC:20230211T123000
+DTSTAMP:20230201T135600
+UID:MEC-4d6b3e38b952600251ee92fe603170ff@wmbiglocal.org
+CREATED:20230201
+LAST-MODIFIED:20230208
+PRIORITY:5
+TRANSP:OPAQUE
+SUMMARY:Heather’s House of Stories and Magic Box
+DESCRIPTION:[et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.18.0″ _dynamic_attributes=”background_image” _module_preset=”default” use_background_color_gradient=”on” background_color_gradient_stops=”rgba(0,0,0,0) 0%|rgba(0,0,0,0.4) 100%” background_color_gradient_overlays_image=”on” background_color_gradient_start=”rgba(0,0,0,0)” background_color_gradient_end=”rgba(0,0,0,0.4)” background_image=”@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF9mZWF0dXJlZF9pbWFnZSIsInNldHRpbmdzIjp7fX0=@” custom_padding=”200px||60px||false|false” custom_padding_tablet=”80px||40px||false|false” custom_padding_phone=”60px||0px||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_text _builder_version=”4.16″ _dynamic_attributes=”content” _module_preset=”default” header_font=”|700|||||||” header_text_color=”#FFFFFF” header_line_height=”1.2em” global_colors_info=”{}”]@ET-DC@eyJkeW5hbWljIjp0cnVlLCJjb250ZW50IjoicG9zdF90aXRsZSIsInNldHRpbmdzIjp7ImJlZm9yZSI6IjxoMT4iLCJhZnRlciI6IjwvaDE+In19@[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section][et_pb_section fb_built=”1″ custom_padding_last_edited=”on|phone” _builder_version=”4.16″ _module_preset=”default” custom_padding=”60px||0px|||” custom_padding_tablet=”60px||0px|||” custom_padding_phone=”40px||||false|false” global_colors_info=”{}”][et_pb_row _builder_version=”4.16″ _module_preset=”default” width=”100%” custom_padding=”0px||||false|false” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.16″ _module_preset=”default” global_colors_info=”{}”][et_pb_text module_class=”tick-list-green” _builder_version=”4.18.0″ _module_preset=”default” locked=”off” global_colors_info=”{}”]\nHeather’s House of Stories and Magic Box invite you to a morning of fun interactive stories for children. Generously funded by the William Morris Big Local this free event will be a real treat for all the family.\nAt 10am come and meet Lottie and her Magic Box, for children aged 18 months to 6 years. Children guess the theme the story will be based on and follow Lottie, as a character, into this themed adventure where they can role-play, move around the imaginary space – and sing songs!\nAt 11.30am Heather’s House of Stories for children aged 5+ presents Sara’s Dress, a joyful story of a young girl’s fierce independence. Sara feels so powerful in her birthday dress she decides to never take it off, no matter how messy or torn or small it becomes! Sara is growing but refuses to change, she literally becomes stuck in her dress! Sara’s family, though exasperated by her stubbornness, learn to accept her big feelings and help her to feel free as the fabulous unique and vibrant individual she has always been. Sara has so much fun collecting a year of her life onto her dress, the whole journey to freedom begins with a bit of spilt yoghurt.\nLottie and Heather’s stories are always a ton of fun with lots of joining in and time for a chat and a cuppa at the end.\nPlease note that spaces are limited, so arrive early to avoid disappointment.\n[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section][et_pb_section fb_built=”1″ _builder_version=”4.18.0″ _module_preset=”default” global_colors_info=”{}”][et_pb_row _builder_version=”4.18.0″ _module_preset=”default” global_colors_info=”{}”][et_pb_column type=”4_4″ _builder_version=”4.18.0″ _module_preset=”default” global_colors_info=”{}”][et_pb_image src”wp-content/uploads/2023/02/PRIORY_COURT_SQUARE_DIGITAL.jpeg” _builder_version=”4.18.0″ _module_preset=”default” global_colors_info=”{}”][/et_pb_image][/et_pb_column][/et_pb_row][/et_pb_section]\n
+URL:https://wmbiglocal.org/events/heathers-house-of-stories
+ORGANIZER;CN=William Morris Big Local:MAILTO:
+CATEGORIES:Community
+LOCATION:Priory Court Community Centre
+ATTACH;FMTTYPE=image/jpeg:https://wmbiglocal.org/wp-content/uploads/2023/02/PRIORY_COURT_SQUARE_DIGITAL.jpeg
+END:VEVENT
+END:VCALENDAR
