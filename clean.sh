@@ -7,7 +7,7 @@ chmod -R +rw .
 
 echo "Renaming files with ?, &, %3F, and = in their name"
 
-while IFS= read -r -d '' path; do
+while IFS= read -r path; do
   filename="${path##*/}"
   clean_filename="$(echo "${filename}" | sed 's/%3F/\?/g' | sed 's/\?/_q_/g' | sed 's/&/_a_/g' | sed 's/=/_e_/g' | sed 's/#/_h_/g')"
   clean_path="$(echo "${path}" | sed 's/%3F/\?/g' | sed 's/\?/_q_/g' | sed 's/&/_a_/g' | sed 's/=/_e_/g' | sed 's/#/_h_/g')"
